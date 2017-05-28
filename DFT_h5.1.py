@@ -52,22 +52,32 @@ for j in range(0,N):
 #    
 
 
+                  
+                  
+# Homework 5 Number 4 
 
 
-# Problem 4 
+import math
+import numpy as np
+
+#These will be our C values
 
 N = 8
-m =int(round(N/2,2.0))
+m =int(round(N/2.0))
 f = [0]*N
 x = [0]*N
 prime=[0]*N
 for j in range(0,N):
     x[j]=j*2*math.pi/N
-    f[j]=math.exp(math.sin(x[j])
-   
-    
+    f[j]=math.exp(math.sin(x[j]))
+     
 c=np.fft.fft(f)
-print(c)
+print(c)                                #printing C values
+sum=[0]*N
+for i in range(5,8):
+    sum[i]=j*i*c[i]*math.exp(i*j*x[0])
+
+
 
 
 
